@@ -305,7 +305,7 @@ export default function App() {
       totalAmount: q.totalAmount,
       paidAmount: 0,
       balanceDue: q.totalAmount,
-      notes: q.notes,
+      notes: '',
       paymentTerms: 'Please make payment within agreed time frame.',
       createdAt: new Date().toISOString().slice(0, 10),
     };
