@@ -1114,6 +1114,7 @@ body {
     position: static !important;
     background: none !important;
     backdrop-filter: none !important;
+    margin: 0 !important;
     padding: 0 !important;
     overflow: visible !important;
   }
