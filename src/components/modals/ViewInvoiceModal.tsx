@@ -36,7 +36,7 @@ export const ViewInvoiceModal: React.FC<ViewInvoiceModalProps> = ({
   const handlePrint = () => window.print();
 
   return (
-    <div className="fixed inset-0 z-50 bg-white/80 backdrop-blur-sm flex items-start justify-center p-4 overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-slate-100 backdrop-blur-sm flex items-start justify-center p-4 overflow-y-auto">
       <div className="bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-[220mm] shadow-2xl p-4 relative my-6 text-white print-hide">
         <div className="flex items-center justify-between pb-3 border-b border-zinc-800">
           <div className="flex items-center space-x-2">
