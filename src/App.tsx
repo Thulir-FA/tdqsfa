@@ -305,8 +305,8 @@ export default function App() {
       totalAmount: q.totalAmount,
       paidAmount: 0,
       balanceDue: q.totalAmount,
-      notes: `Converted from estimate ${q.quotationNo}`,
-      paymentTerms: 'Net 30 Days',
+      notes: q.notes,
+      paymentTerms: 'Please make payment within agreed time frame.',
       createdAt: new Date().toISOString().slice(0, 10),
     };
     setInvoices([newInvoice, ...invoices]);
