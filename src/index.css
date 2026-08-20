@@ -1033,6 +1033,10 @@ body {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
   .a4-print-area {
     background: white !important;
     -webkit-print-color-adjust: exact;
