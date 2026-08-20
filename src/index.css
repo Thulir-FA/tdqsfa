@@ -1037,11 +1037,26 @@ body {
     size: A4;
     margin: 0;
   }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 210mm !important;
+    height: 297mm !important;
+    background: white !important;
+  }
+  
   .a4-print-area {
     background: white !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-    padding: 10 !important;
+    margin: 0 !important;
+    padding: 12mm !important;
+    width: 100% !important;
+    min-height: 297mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
   }
 
   /* Hide page content behind the modal */
