@@ -104,41 +104,24 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
           : initialInvoice.totalAmount;
 
       setAmount(invoiceAmount || 0);
-
       setReferenceNo(generateTransactionRef());
-
       setReceiptNo(suggestedNo || "");
-
       setPaymentDate(getToday());
-
       setPaymentMode("bank_transfer");
-
       setStatus("cleared");
-
-      setNotes("This receipt confirms payment received against the invoice referenced above. Please retain for your records.");
+      setNotes(`This receipt confirms payment of ${companySettings.currencySymbol || ''}${invoiceAmount || 0} received against invoice ${initialInvoice.invoiceNo}. Payment mode: Bank Transfer. Please retain this receipt for your records.`);
     } else {
       setDeptId(getDefaultDepartment());
-
       setReceiptNo(suggestedNo || "");
-
       setInvoiceNo("");
-
       setNameSource("custom");
-
       setClientOrVendorName("");
-
       setType("incoming");
-
       setPaymentDate(getToday());
-
       setPaymentMode("bank_transfer");
-
       setReferenceNo(generateTransactionRef());
-
       setAmount(0);
-
       setStatus("cleared");
-
       setNotes(`This receipt confirms payment received. Please retain for your records`);
     }
   }, [
