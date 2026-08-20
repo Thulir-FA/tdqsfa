@@ -139,7 +139,7 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
 
       setStatus("cleared");
 
-      setNotes("");
+      setNotes("This receipt confirms payment received against the invoice referenced above. Please retain for your records.");
     }
   }, [
     isOpen,
