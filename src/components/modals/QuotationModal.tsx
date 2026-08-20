@@ -78,8 +78,8 @@ export const QuotationModal: React.FC<QuotationModalProps> = ({
       setDate(new Date().toISOString().slice(0, 10));
       setValidityDays(30);
       setStatus('draft');
-      setNotes('Thank you for requesting an estimate with TDQS Engineering.');
-      setTerms('Validity as selected above. 50% advance upon contract signing.');
+      setNotes('Thank you for your interest in our services. This estimate is prepared based on the scope described above and is valid for the period specified. Any variation in scope may affect the pricing.');
+      setTerms('No VAT is applicable. Any scope added above the scope mentioned in this quotation will be charged separately after mutual agreement.');
       setClientSource('custom');
       setItems([{ id: `li_${Date.now()}`, description: '', quantity: 1, unit: 'Lump Sum', unitPrice: 0, amount: 0 }]);
     }
