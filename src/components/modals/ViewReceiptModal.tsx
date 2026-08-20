@@ -144,12 +144,13 @@ export const ViewReceiptModal: React.FC<ViewReceiptModalProps> = ({
 
           {/* Notes */}
           {receipt.notes && (
-            <div className="border-t border-slate-200 pt-3 text-sm text-slate-500">
+            <div className="border-t border-slate-200 pt-3 text-sm text-slate-500 space-y-1">
               <p className="font-bold text-slate-700">Notes:</p>
-              <p>{receipt.notes}</p>
+              {receipt.notes.split('\n').filter(l => l.trim() !== '').map((line, i) => (
+                <p key={i} className="m-0 leading-relaxed">{line}</p>
+              ))}
             </div>
           )}
-        </div>
 
         {/* Disclaimer */}
         <div className="print-disclaimer border-t border-zinc-200 mt-4 pt-3 text-center text-zinc-500">
