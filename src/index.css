@@ -1032,7 +1032,6 @@ body {
   .table-wrap th, .table-wrap td { padding: 10px 12px; font-size: 12px; }
 }
 
-@media print {
   @media print {
   @page {
     size: A4;
