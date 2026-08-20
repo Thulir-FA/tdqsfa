@@ -1033,14 +1033,12 @@ body {
 }
 
 @media print {
-  body {
-    .a4-print-area {
+  .a4-print-area {
     background: white !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     margin: 0 !important;
     padding: 0 !important;
-   }
   }
 
   /* Hide page content behind the modal */
@@ -1071,7 +1069,7 @@ body {
     color: black !important;
   }
 
-  /* Hide ONLY the header row (INVOICE badge + buttons) */
+  /* Hide ONLY the header row (badge + buttons) */
   .print-hide > div:first-of-type {
     display: none !important;
   }
