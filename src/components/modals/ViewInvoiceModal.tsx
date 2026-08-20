@@ -36,7 +36,7 @@ export const ViewInvoiceModal: React.FC<ViewInvoiceModalProps> = ({
   const handlePrint = () => window.print();
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-100 backdrop-blur-sm flex items-start justify-center p-4 overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-start justify-center p-4 overflow-y-auto">
       <div className="bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-[220mm] shadow-2xl p-4 relative my-6 text-white print-hide">
         <div className="flex items-center justify-between pb-3 border-b border-zinc-800">
           <div className="flex items-center space-x-2">
@@ -52,7 +52,7 @@ export const ViewInvoiceModal: React.FC<ViewInvoiceModalProps> = ({
         </div>
 
         {/* A4 Paper — disclaimer is INSIDE here */}
-        <div className="a4-print-area rounded-lg border border-zinc-200 shadow-lg mt-3 text-zinc-900 font-sans p-8 space-y-5">
+        <div className="a4-print-area bg-white rounded-lg border border-zinc-200 shadow-lg mt-3 text-zinc-900 font-sans p-8 space-y-5">
 
           {/* Header */}
           <div className="flex justify-between items-start border-b-2 border-zinc-300 pb-5">
