@@ -78,12 +78,12 @@ export const QuotationModal: React.FC<QuotationModalProps> = ({
       setDate(new Date().toISOString().slice(0, 10));
       setValidityDays(30);
       setStatus('draft');
-      setNotes(`1. Thank you for your interest in our services.
-         2. No VAT is applicable.
-         3. This estimate is prepared based on the scope described above and is valid for the period specified.
-         4. Any variation in scope may affect the pricing.
-         5. Any scope added above the scope mentioned in this quotation will be charged separately after mutual agreement.`
-      );
+      setNotes(`1. No VAT is applicable.
+2. Payment to be made via bank transfer to the account details shown above.
+3. Please quote the invoice number as reference. We kindly request payment within the due date specified.
+4. For any queries, please contact our accounts team.
+5. Non-payment beyond 60 days may result in suspension.`);
+      setClientSource('custom');
       setClientSource('custom');
       setItems([{ id: `li_${Date.now()}`, description: '', quantity: 1, unit: 'Lump Sum', unitPrice: 0, amount: 0 }]);
     }
