@@ -56,7 +56,7 @@ export const ViewReceiptModal: React.FC<ViewReceiptModalProps> = ({
         </div>
 
         {/* A4 Paper */}
-        <div className="a4-print-area rounded-lg border border-zinc-200 shadow-lg mt-3 text-zinc-900 font-sans p-8 space-y-5">
+        <div className="a4-print-area bg-white rounded-lg border border-zinc-200 shadow-lg mt-3 text-zinc-900 font-sans p-8 space-y-5"></div>
 
           {/* Header */}
           <div className="flex justify-between items-start border-b-2 border-zinc-300 pb-5">
