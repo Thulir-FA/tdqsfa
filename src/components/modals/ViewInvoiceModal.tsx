@@ -147,14 +147,14 @@ export const ViewInvoiceModal: React.FC<ViewInvoiceModalProps> = ({
           )}
 
           {/* Notes */}
+          {receipt.notes && (
             <div className="border-t border-slate-200 pt-3 text-sm text-slate-500 space-y-1">
-              <p className="font-bold text-slate-700">Notes & Terms:</p>
-              {(doc.notes || 'Thank you for your business.').split('\n').filter(l => l.trim() !== '').map((line, i) => (
-              <p key={i} className="m-0 leading-relaxed">{line}</p>
-              ))}
-              {isInvoice && <p>{inv!.paymentTerms}</p>}
-              {!isInvoice && <p>{quot!.terms}</p>}
+            <p className="font-bold text-slate-700">Notes:</p>
+            {receipt.notes.split('\n').filter(l => l.trim() !== '').map((line, i) => (
+            <p key={i} className="m-0 leading-relaxed">{line}</p>
+            ))}
             </div>
+          )}
 
           {/* ★ Disclaimer — INSIDE the paper, at the very end ★ */}
           <div className="border-t border-slate-300 pt-4 text-center">
