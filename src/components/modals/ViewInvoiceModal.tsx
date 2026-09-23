@@ -154,7 +154,7 @@ export const ViewInvoiceModal: React.FC<ViewInvoiceModalProps> = ({
                 <p key={i} className="m-0 leading-relaxed">{line}</p>
               ))}
               {isInvoice && inv!.notes && (
-                <p className="m-0 leading-relaxed">{inv!.paymentTerms}</p>
+                <p className="m-0 leading-relaxed">{inv!.notes}</p>
               )}
               {!isInvoice && quot!.terms && (
                 <p className="m-0 leading-relaxed">{quot!.terms}</p>
