@@ -156,9 +156,6 @@ export const ViewInvoiceModal: React.FC<ViewInvoiceModalProps> = ({
               {isInvoice && inv!.notes && (
                 <p className="m-0 leading-relaxed">{inv!.notes}</p>
               )}
-              {!isInvoice && quot!.terms && (
-                <p className="m-0 leading-relaxed">{quot!.terms}</p>
-              )}
             </div>
           )}
 
