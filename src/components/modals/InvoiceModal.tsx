@@ -79,7 +79,7 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
       setDueDateDays(30);
       setStatus('pending');
       setPaidAmount(0);
-      setNotes("1. No VAT is applicable.\n2. Payment to be made via bank transfer or cheque in the name/to the account details shown above.\n3. Please quote the invoice number as reference.\n4.We kindly request payment within the due date specified.\n5. Non-payment beyond 60 days may result in suspension of current works.");
+      setNotes("1. No VAT is applicable.\n2. Payment to be made via bank transfer or cheque in the name/to the account details shown above.\n3. Please quote the invoice number as reference.\n4.We kindly request payment within the due date specified.\n5. Non-payment beyond 30 days from date of invoice may result in suspension of current works.");
       setClientSource('custom');
       setItems([{ id: `li_inv_${Date.now()}`, description: '', quantity: 1, unit: 'Lump Sum', unitPrice: 0, amount: 0 }]);
     }
