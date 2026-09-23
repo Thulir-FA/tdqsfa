@@ -67,7 +67,6 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
       setStatus(initialData.status);
       setPaidAmount(initialData.paidAmount || 0);
       setNotes(initialData.notes || '');
-      setPaymentTerms(initialData.paymentTerms || '');
       setItems(initialData.items && initialData.items.length > 0 ? initialData.items : []);
       setClientSource(vendors.find((v) => v.name === initialData.clientName) ? 'vendor' : 'custom');
     } else {
